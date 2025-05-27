@@ -1,0 +1,76 @@
+.new-expense__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.new-expense__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.new-expense__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-expense__control input:focus {
+    outline: none;
+    border-color: #40005d;
+    box-shadow: 0 0 0 2px rgba(64, 0, 93, 0.2);
+}
+
+.new-expense__control input[aria-invalid='true'] {
+    border-color: #f44336;
+    background-color: #fff8f8;
+}
+
+.new-expense__actions {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover,
+.button:active {
+    background-color: #510674;
+    border-color: #510674;
+    transform: translateY(-2px);
+}
+
+.button--alt {
+    background-color: transparent;
+    color: #40005d;
+}
+
+.button--alt:hover,
+.button--alt:active {
+    background-color: #f0e6f8;
+}
+
+.error-text {
+    color: #f44336;
+    margin: 0.25rem 0 0;
+    font-size: 0.8rem;
+}
